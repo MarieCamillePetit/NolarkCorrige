@@ -1,0 +1,54 @@
+#video {
+    display: flex;
+}
+
+#video img, #video article p, #video iframe {
+    padding-top: 16px;
+}
+
+#video iframe {
+    border: 0px;
+    width:480px;
+    height:270px;
+}
+
+#video img {
+    float: left;
+}
+
+#video article {
+    width: 50%;
+    padding-right: 10px;
+}
+
+#video article p span {
+    color: red;
+    font-weight: bold;
+}
+
+#video article p {
+    text-align: justify;
+}
+
+#video article p {
+    padding-right: 10px;
+    text-align: justify;
+}
+
+/* Smartphone */
+@media screen and (max-width:768px) {
+    #video {
+        flex-direction: column;
+    }
+    #video article {
+        width: auto;
+    }
+    #video article p {
+        padding-left: 10px;
+    }
+    #video iframe {
+        align-self: center;
+        width: 100%;
+        height: auto;
+    }
+}

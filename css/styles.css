@@ -1,0 +1,459 @@
+* {
+    font-family: 'Montserrat'; /* Police par défaut */
+    box-sizing: border-box; /* Les tailles de conteneurs incluent bordures et 
+                               remplissages */
+    margin: 0; /* Mise à 0 des marges externes */
+    padding: 0; /* Mise à 0 des marges internes */
+    text-decoration: none; /* Suppression de la mise en forme habituelle des liens 
+                             (soulignement) */
+}
+
+/* Définition de la police "Montserrat" */
+@font-face{ 
+    font-family: "Montserrat";
+    src: url('polices/Montserrat-Regular.ttf') format("truetype");
+}
+
+body {
+    display: flex; /* Ce conteneur est "flexible" */
+    /* justify-content: center; /* Les éléments portés sont centrés à l'horizontal */
+    flex-direction: column; /* Les éléments sont empilés */
+    /* align-items: center; /* Les éléments portés sont centrés à la verticale */
+    width: 916px; /* La page occupe 916px */
+    margin: 0 auto; /* On centre la page */
+    background: #2d2d2d17; /* Le fond par défaut est gris transparent */
+}
+
+header {
+    width: 916px; /* Les headers et sections occupent 916px (taille de la bannière) */
+    display: flex; /* Ce conteneur est "flexible" */
+    flex-direction: column; /* Les éléments sont empilés */
+}
+
+picture {
+    display: flex; /* Ce conteneur est "flexible" */
+}
+
+nav input {
+    display: none; /* Composant caché par défaut */
+}
+
+nav ul {
+    display: flex; /* Ce conteneur est "flexible" */
+    flex-direction: row; /* Les éléments sont mis côte à côte */
+    justify-content: space-between; /* Les éléments sont répartis équitablement */
+    background-color: black; /* Couleur du fond */
+}
+nav ul li {
+    display: flex; /* Ce conteneur est "flexible" */
+    justify-content: center; /* Les éléments portés sont centrés à l'horizontal */
+    list-style-type: none; /* Cette liste n'a pas de puce */
+    font-size: x-large; /* Le texte est grossi en XL */
+    flex-grow: 1; /* L'espace occupé est élargie */
+}
+
+nav ul li a {
+    padding: 10px; /* Marge intérieure */
+    color: white; /* Couleur du texte */
+}
+nav ul li:hover {
+    background-color:#9a330a; /* Couleur du fond au passage de la souris */
+}
+section {
+    width: 916px; /* Les sections occupent 916px (taille de la bannière) */
+    background-color: white; /* Fond blanc */
+    padding-bottom: 10px; /* Marge interne inférieure  */
+    padding-left: 5px; /* Marge interne gauche */
+    padding-right: 5px; /* Marge interne droite */
+}
+
+#principal {
+    padding-top: 10px; /* Marge interne supérieure */
+    display: flex; /* Ce conteneur est "flexible" */
+    flex-direction: row; /* Les éléments sont mis côte à côte */
+    text-align: justify; /* Alignement du texte : justifié */
+}
+#principal article {
+    flex: 1; /* Écriture raccourcie : 
+                flex-grow: 1 et flex-shrink:1 = Chaque élément occupe l'espace idéal 
+                (le + et le - à la fois) */
+}
+#principal article img {
+    float: left; /* Mise en élément "flottant" contre lequel on peut venir se poser */
+    margin-right: 10px; /* Marge de droite */
+}
+#principal article p {
+    padding-top: 16px; /* Marge intérieure supérieure */
+}
+#principal aside {
+    display: flex; /* Ce conteneur est "flexible" */
+    flex-direction: column; /* Les éléments sont empilés */
+    margin-left: 16px; /* Marge de gauche */
+    width: 238px; /* Largeur du conteneur (taille de l'image de fond) */
+    background: transparent url('images/post-it-conseils.png') no-repeat 0 0; /* Fond */
+    font-size: small; /* Le texte est réduit en S */
+    font-weight: bold; /* Le texte est mis en gras */
+    padding-left: 35px; /* Marge intérieure gauche */
+    padding-bottom: 60px; /* Marge intérieure basse */
+}
+#principal aside img:first-child{
+    margin-top: 110px; /* Marge supérieure du premier élément qui est une image  */
+}
+#principal aside img {
+    align-self: center; /* Placement au centre */
+}
+#principal aside img:nth-child(3){
+    margin-top: 20px; /* Marge supérieure du troisième élément qui est une image */
+}
+#thematique {
+    display: flex; /* Ce conteneur est "flexible" */
+    flex-wrap: wrap; /* Les éléments sont placés sur plusieurs lignes */
+}
+
+h1 {
+    color: #ff6811; /* Couleur du texte */
+    text-align: center; /* Le texte est centré */
+    font-size: xx-large; /* Le texte est grossi en XXL */
+    margin: 10px 0; /* on ajoute une marge avant et après le titre principal */
+}
+
+#thematique h1 {
+    width: 100%; /* Le titre occupe toute la largeur */ 
+    margin-bottom: 10px; /* Marge basse */
+}
+
+#thematique article {
+    flex: 1; /* flex-grow: 1 et flex-shrink:1 = Chaque élément occupe l'espace idéal (le + et le - à la fois) */
+    height: 256px; /* Hauteur */
+    border: transparent thin solid; /* Bordure transparente */
+    display: flex; /* Ce conteneur est "flexible" */
+    justify-content: center; /* Les éléments portés sont centrés à l'horizontal */
+}
+
+/* Définition de la police "Nordic" */
+@font-face{ 
+    font-family: "Nordic";
+    src: url('polices/Nordic.ttf') format("truetype");
+}
+
+#thematique a {
+    font-family: 'Nordic'; /* Police à utiliser */
+    font-size: xx-large; /* Le texte est grossi en XXL */
+    color: black; /* Couleur du texte */
+
+}
+
+#gauche:hover, #milieu:hover, #droite:hover {
+    border: black thin solid; /* Bordure au passage de la souris */
+    border-radius: 10px; /* Bords arrondis au passage de la souris */
+    background-color: #ededed; /* Fond au passage de la souris */
+}
+
+#gauche {
+    background: transparent url('images/casqueroute.png') no-repeat center 10px; /* Fond */
+}
+
+#milieu {
+    background: transparent url('images/casquecross.png') no-repeat center 0; /* Fond */
+}
+
+#droite {
+    background: transparent url('images/casquepiste.png') no-repeat center 10px; /* Fond */
+}
+
+footer {
+    display: flex; /* Ce conteneur est "flexible" */
+    justify-content: center; /* Les éléments portés sont centrés à l'horizontal */
+    align-items: center; /* Les éléments portés sont centrés à la verticale */
+    /* position: fixed; /* Le conteneur est fixé en fonction de ses coordonnées (à 0px du bas) */
+    /* bottom: 0px; /* Bas */
+    /* height: 125px; /* Hauteur */
+    padding: 15px 0 5px 0;
+    width: 916px; /* Le pied de page occupe toute la largeur */ 
+    background-color: black; /* Couleur du fond */
+    color: #bbb; /* Couleur du texte */
+    text-align: center; /* Texte centré */
+    flex-direction: column; /* Les éléments du footer s'empilent */
+    font-size: small; /* Taille de police réduite */
+}
+
+footer img {
+    width: 256px;
+    object-fit: contain;
+    object-position: top;
+}
+
+footer a{
+    color: inherit; /* Couleur du lien identique à celle du conteneur */
+}
+
+footer hr {
+    width: 150px;
+    height: 1px;
+    border: none;
+    background-color: #ff6811;
+    margin: 10px 0;
+}
+
+#footer1 {
+    display: flex; /* Ce conteneur est "flexible" */
+    flex-direction: row; /* Les éléments sont mis côte à côte */
+    width: 100%; /* Tout l'espace disponible est occupé */
+    justify-content: space-around; /* Les éléments sont répartis équitablement loin du bord */
+}
+
+#footer1 .pfoot p {
+    margin: 0;
+    width: 300px;
+    text-align: left;
+}
+
+#footer1 .pfoot p:not(:first-child) {
+    margin-top: 10px;
+}
+
+#footer1 .pfoot span {
+    margin-left: 15px;
+    color: #ff6811;
+}
+
+#footer1 .pfoot p a:hover {
+    text-decoration: underline;
+}
+
+#logosrs {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+#logosrs img {
+    width: 32px;
+    height: 32px;
+}
+
+#logosrs #logosnapchat {
+    filter: brightness(0) invert(1);
+}
+
+#attribution {
+    font-size: x-small;
+}
+
+#attribution a {
+    color: #ff6811;
+}
+
+/* Personnalisation de la boite de cookies de Tarteaucitron */
+#tarteaucitronRoot #tarteaucitronAlertBig {
+    background-color: darkcyan!important;
+}
+
+#tarteaucitronAlertBig #tarteaucitronCloseAlert {
+    background-color: #ff6811!important;
+    color: black!important;
+}
+
+#tarteaucitronAlertBig #tarteaucitronCloseAlert:before {
+    content: '🍪'!important;
+}
+
+#tarteaucitronAlertBig:before {
+    content: '👋'!important;
+}
+
+#tarteaucitronPrivacyUrl {
+    background-color: gray!important;
+    margin-bottom: 3px!important;
+    margin-left: 7px!important;
+    padding: 4px 10px!important;
+    line-height: 1.2!important;
+    font-size: 16px!important;
+}
+
+#tarteaucitronPrivacyUrl:before {
+    content: '📑'!important;
+}
+
+#tarteaucitronDisclaimerAlert a {
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+/* Smartphone */
+@media screen and (max-width:768px) {
+    body {
+        font-size: large;
+        width: 100%;
+    }
+
+    header, section, footer {
+        width: 100%; /* Suppression de la largeur définie */
+        background-color: white;
+    }
+
+    header img {
+        width: 100%; /* Bannière sur toute la largeur */
+        background-color: black; /* Extension artificielle noire */
+        padding-bottom: 15px; /* du bas de l'image sur 15 pixels */
+    }
+
+    nav {
+        /*display: block;*/
+        position: relative;
+        top: 7px;
+        left: 7px;
+        z-index: 1;
+    }
+
+    nav ul {
+        display: flex; /* Ce conteneur est "flexible" */
+        flex-direction: column; /* Les éléments sont mis côte à côte */
+        align-items: flex-start; /* Alignement sur la gauche */
+        position: absolute;
+        margin: -39px 0 0 -60px;
+        padding: 50px 10px 10px 60px;
+        background: black;
+        list-style-type: none;
+        transform: translate(-100%, 0);
+        transition: transform 0.5s ease;
+    }
+
+    nav ul li {
+        display: list-item;
+        padding: 10px 0;
+        width: 100%;
+    }
+
+
+    nav input {
+        display: block; /* Affichage de l'input pour pouvoir cliquez dessus */
+        position: absolute;
+        opacity: 0; /* input transparent */
+        z-index: 2; /* On le place au-dessus du bouton de menu (hamburger) */
+        width: 30px; /* Largeur (pour que l'input soit activé sur la même taille que les barres) */
+        height: 30px; /* Hauteur (pour que l'input soit activé sur la même taille que les barres) */
+    }
+
+    /* Création artificielle de l'icone de menu (hamburger) */
+    nav span {
+        display: block;
+        width: 30px;
+        height: 5px;
+        margin-bottom: 5px;
+        position: relative;
+        background: black;
+        border-radius: 3px;
+        z-index: 1; /* En dessous de l'input défini avant */
+        /*transform-origin: 4px 0px; /* Modification du centre pour rotation */
+        transition: transform 0.5s ease, background 0.5s ease, opacity 0.55s ease;
+    }
+
+    /* Toutes les barres en blanc */
+    nav input:checked ~ span {
+        background: white;
+    }
+
+    /* On fait pivoter la première de 45° (sens horaire) */
+    nav input:checked ~ span:nth-child(2) {
+        transform: rotate(45deg) translate(7px, 5px);
+    }
+
+    /* On fait pivoter la dernière de 45° (sens anti-horaire) */
+    nav input:checked ~ span:nth-child(4) {
+        transform: rotate(-45deg) translate(10px, -6px);
+    }
+
+    /* On cache la barre du milieu */
+    nav input:checked ~ span:nth-child(3) {
+        opacity: 0; 
+    }
+
+    /* On annule la translation vers la gauche qui a caché le menu */
+    nav input:checked ~ ul {
+        transform: none;
+    }
+
+    #principal {
+        flex-direction: column;
+    }
+
+    #principal article img {
+        float: left;
+        margin-right: 10px;
+        margin-top: 15px;
+    }
+
+    #principal aside {display: none;}
+
+    h1 {
+        font-size: x-large;
+    }
+
+    #thematique {   
+        flex-direction: column;
+        padding-top: 15px;
+    }
+
+    #gauche, #milieu, #droite {
+        background-size: contain; 
+        background-position-y: center;
+        background-position-x: left;
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    footer {
+        background-color: black;
+    }
+
+    footer img {
+        align-self: center;
+        width: 60%;
+    }
+
+    #footer1 {
+        flex-direction: column;
+        font-size: large;
+    }
+
+    #footer1 .pfoot p {
+        width: 100%;
+        text-align: center;
+    }
+
+    #footer1 .pfoot .sousTitre {
+        margin-top: 25px;
+    }
+
+    #footer1 .pfoot hr {
+        margin: auto;
+    }
+
+    #logosrs {
+        margin-top: 25px;
+        height: auto;
+    }
+
+    #logosrs a img {
+        padding: 10px;
+        width: 100%;
+        height: min-content;
+        max-height: 75px;
+    }
+
+    #footer2 {
+        font-size: large;
+    }
+
+    #attribution {
+        font-size: medium;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:768px) {
+    #thematique {
+        flex-direction: row; /* Sur tablette, on met les casques de la page d'accueil côte à côte */
+    }
+}

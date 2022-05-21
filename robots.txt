@@ -1,0 +1,40 @@
+User-agent: *
+Allow: /
+Sitemap: https://nolark.gil83.fr/sitemap.xml
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://nolark.gil83.fr/</loc>
+        <lastmod>2020-09-01</lastmod>
+    </url>
+    <url>
+        <loc>https://nolark.gil83.fr/index.php</loc>
+        <lastmod>2020-09-01</lastmod>
+    </url>
+    <url>
+        <loc>https://nolark.gil83.fr/pages/route.php</loc>
+        <lastmod>2020-09-01</lastmod>
+    </url>
+    <url>
+        <loc>https://nolark.gil83.fr/pages/cross.php</loc>
+        <lastmod>2020-09-01</lastmod>
+    </url>
+    <url>
+        <loc>https://nolark.gil83.fr/pages/piste.php</loc>
+        <lastmod>2020-09-01</lastmod>
+    </url>
+    <url>
+        <loc>https://nolark.gil83.fr/pages/enfants.php</loc>
+        <lastmod>2020-09-01</lastmod>
+    </url>
+    <url>
+        <loc>https://nolark.gil83.fr/pages/nous-contacter.php</loc>
+        <lastmod>2020-09-01</lastmod>
+    </url>
+    <url>
+        <loc>https://nolark.gil83.fr/pages/cgu.php</loc>
+        <lastmod>2020-09-01</lastmod>
+    </url>
+</urlset>
